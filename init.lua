@@ -9,6 +9,7 @@ vim.opt.fillchars = { eob = " " }
 vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
 vim.o.confirm = true
+-- vim.o.cmdheight = 0
 
 vim.fn.matchadd("HighlightInfo", [[\v<TODO>:]])
 vim.fn.matchadd("HighlightInfoText", [[\v<TODO>:\s*\zs.*$]])
@@ -19,9 +20,9 @@ vim.fn.matchadd("HighlightWarnText", [[\v<(FIX|FIXIT|WARN)>:\s*\zs.*$]])
 vim.fn.matchadd("HighlightDang", [[\v<(BUG|ERR|DANG)>:]])
 vim.fn.matchadd("HighlightDangText", [[\v<(BUG|ERR|DANG)>:\s*\zs.*$]])
 
-vim.opt.shortmess = {
-  o = true
-}
+-- vim.opt.shortmess = {
+--   o = true
+-- }
 
 -- editing
 vim.opt.shiftwidth = 4

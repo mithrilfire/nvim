@@ -13,8 +13,26 @@ return {
       },
     },
     config = function()
+      require('lspconfig').basedpyright.setup {
+        settings = {
+          basedpyright = {
+            -- Using Ruff's import organizer
+            disableOrganizeImports = true,
+          },
+          python = {
+            analysis = {
+              -- Ignore all files for analysis to exclusively use Ruff for linting
+              ignore = { '*' },
+            },
+          },
+        },
+      }
+
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('gdscript')
+      vim.lsp.enable('basedpyright')
+      vim.lsp.enable('ruff')
+      vim.lsp.enable('texlab')
 
       -- vim.diagnostic.config({ virtual_lines = true })
       vim.diagnostic.config({ virtual_text = true })
