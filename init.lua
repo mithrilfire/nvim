@@ -20,10 +20,6 @@ vim.fn.matchadd("HighlightWarnText", [[\v<(FIX|FIXIT|WARN)>:\s*\zs.*$]])
 vim.fn.matchadd("HighlightDang", [[\v<(BUG|ERR|DANG)>:]])
 vim.fn.matchadd("HighlightDangText", [[\v<(BUG|ERR|DANG)>:\s*\zs.*$]])
 
--- vim.opt.shortmess = {
---   o = true
--- }
-
 -- editing
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4

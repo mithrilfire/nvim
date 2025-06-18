@@ -6,7 +6,7 @@ return {
       require("mini.statusline").setup(
         { use_icons = true }
       )
-      require("mini.notify").setup()
+      -- require("mini.notify").setup()
       require("mini.diff").setup({
         -- Options for how hunks are visualized
         view = {
