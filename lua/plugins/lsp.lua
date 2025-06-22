@@ -29,10 +29,11 @@ return {
       }
 
       vim.lsp.enable('lua_ls')
-      vim.lsp.enable('gdscript')
-      vim.lsp.enable('basedpyright')
-      vim.lsp.enable('ruff')
+      -- vim.lsp.enable('gdscript')
+      -- vim.lsp.enable('basedpyright')
+      -- vim.lsp.enable('ruff')
       vim.lsp.enable('texlab')
+      vim.lsp.enable('astro')
 
       -- vim.diagnostic.config({ virtual_lines = true })
       vim.diagnostic.config({ virtual_text = true })

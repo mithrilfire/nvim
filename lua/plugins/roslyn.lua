@@ -17,7 +17,7 @@ return {
         --     - `root_dir`
         cmd = {
           "dotnet",
-          "/home/fatih/apps/roslyn-ls/Microsoft.CodeAnalysis.LanguageServer.dll",
+          "/home/fatih/Apps/roslyn-ls/Microsoft.CodeAnalysis.LanguageServer.dll",
           "--logLevel=Information",
           "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),
           "--stdio",
