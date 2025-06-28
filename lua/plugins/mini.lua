@@ -7,6 +7,8 @@ return {
         { use_icons = true }
       )
       -- require("mini.notify").setup()
+      require('mini.ai').setup()
+      require('mini.surround').setup()
       require("mini.diff").setup({
         -- Options for how hunks are visualized
         view = {
